@@ -15,6 +15,9 @@ export default {
   ],
   theme: {
   	extend: {
+		fontFamily:{
+			title:['Bricolage', 'sans-serif'],
+		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
