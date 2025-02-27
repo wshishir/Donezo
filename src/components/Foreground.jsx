@@ -1,9 +1,11 @@
 import React from "react";
+import Card from "./Card";
+import Topbar from "./Topbar";
 
 const Foreground = () => {
   return (
     <div className='fixed top-0 left-0 z-[3] w-full h-full'>
-      <div className='w-60 h-72 bg-neutral-400  rounded-[20px]'></div>
+      <Card/>
     </div>
   );
 };
