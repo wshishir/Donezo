@@ -20,27 +20,25 @@ const Task = () => {
     <div className='p-4 flex'>
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogTrigger asChild>
-          <Button
-            className='bg-neutral-800 text-white ml-auto hover:bg-neutral-600'
-          >
+          <Button className=' font-title bg-neutral-800 text-white ml-auto hover:bg-neutral-600 '>
             <Plus className='h-4 w-4' />
             New Task
           </Button>
         </DialogTrigger>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Add new Task</DialogTitle>
+            <DialogTitle className='font-title'>Add new Task</DialogTitle>
           </DialogHeader>
-          <div className='grid gap-4 py-4'>
+          <div className='grid gap-4 py-4 font-title'>
             <div className='grid gap-2'>
               <Label>Title</Label>
               <Input id='title' placeholder='Enter task title' />
             </div>
-            <div className='grid gap-2'>
+            <div className='grid gap-2 font-title'>
               <Label>Description</Label>
               <Textarea id='description' placeholder='Enter task description' />
             </div>
-            <div className='grid gap-2'>
+            <div className='grid gap-2 font-title'>
               <Label>Priority</Label>
               <select
                 id='priority'
@@ -52,7 +50,7 @@ const Task = () => {
               </select>
             </div>
           </div>
-          <div className='flex justify-end'>
+          <div className='flex justify-end font-title'>
             <Button>Add Task</Button>
           </div>
         </DialogContent>
