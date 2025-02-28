@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       <div className='bg-neutral-900 h-screen w-full relative'>
-        <Background/>
-        <Foreground/>
+        <Background />
+        <Foreground />
       </div>
     </>
   );
