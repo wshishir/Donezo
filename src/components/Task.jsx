@@ -15,7 +15,25 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 
 const Task = () => {
+  const [task, setTasks] = useState([]);
+  const [newTask, setNewTask] = useState({
+    title: "",
+    description: "",
+    priority: "medium",
+  });
   const [open, setOpen] = useState(false);
+
+  const addTask = () => {
+    if ((newTask.title, trim() === "")) return;
+
+    const task = {
+      id: Date.now().toString(),
+      title: newTask.title,
+      description: newTask.description,
+      priority: newTask.priority,
+      completed: false,
+    };
+  };
   return (
     <div className='p-4 flex'>
       <Dialog open={open} onOpenChange={setOpen}>
