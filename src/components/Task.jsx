@@ -69,7 +69,7 @@ const Task = () => {
             </div>
           </div>
           <div className='flex justify-end font-title'>
-            <Button>Add Task</Button>
+            <Button className='bg-neutral-800'>Add Task</Button>
           </div>
         </DialogContent>
       </Dialog>
